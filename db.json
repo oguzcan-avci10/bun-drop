@@ -1,3 +1,124 @@
 {
-  "menu": []
+  "menu": [
+    {
+      "id": 1,
+      "title": "Bacon-Burger",
+      "price": 9.99,
+      "description": "Juicy beef patty with crispy bacon, melted cheddar, fresh lettuce, tomatoes, and house sauce on a toasted brioche bun.",
+      "category": "burgers",
+      "image": "images/bacon.png"
+    },
+    {
+      "id": 2,
+      "title": "Big-King",
+      "price": 11.99,
+      "description": "Double beef patties with melted American cheese, fresh lettuce, pickles, onions, and signature King sauce.",
+      "category": "burgers",
+      "image": "images/big-king.png"
+    },
+    {
+      "id": 3,
+      "title": "Cheese Burger",
+      "price": 8.99,
+      "description": "Juicy beef patty topped with melted American cheese, crisp lettuce, tomatoes, and pickles on a toasted bun.",
+      "category": "burgers",
+      "image": "images/cheeseburger.png"
+    },
+    {
+      "id": 4,
+      "title": "Double Beef",
+      "price": 12.99,
+      "description": "Two juicy beef patties with melted cheese, crisp lettuce, tomatoes, pickles, and special sauce on a toasted bun.",
+      "category": "burgers",
+      "image": "images/double-beef.png"
+    },
+    {
+      "id": 5,
+      "title": "Double Cheese",
+      "price": 10.99,
+      "description": "Two beef patties with melted American cheese, pickles, onions, and ketchup on a toasted bun.",
+      "category": "burgers",
+      "image": "images/double-cheese.png"
+    },
+    {
+      "id": 6,
+      "title": "Original",
+      "price": 8.99,
+      "description": "Juicy beef patty with crisp lettuce, ripe tomatoes, pickles, and classic sauce on a toasted bun. Simple and delicious!.",
+      "category": "burgers",
+      "image": "images/original.png"
+    },
+    {
+      "id": 7,
+      "title": "Smokey",
+      "price": 9.99,
+      "description": "Grilled beef patty with smoked bacon, melted cheddar, crispy onions, and smoky BBQ sauce on a toasted bun. Rich and flavorful!",
+      "category": "burgers",
+      "image": "images/smokey.png"
+    },
+    {
+      "id": 8,
+      "title": "Sweet Onion",
+      "price": 10.99,
+      "description": "Juicy beef patty topped with caramelized sweet onions, melted Swiss cheese, fresh lettuce, and creamy mayo on a toasted bun.",
+      "category": "burgers",
+      "image": "images/sweet-onion.png"
+    },
+    {
+      "id": 9,
+      "title": "Texas",
+      "price": 11.99,
+      "description": "Bold beef patty with melted cheddar, BBQ sauce, jalapeños on a toasted bun. Big flavor, Texas style!",
+      "category": "burgers",
+      "image": "images/texas.png"
+    },
+    {
+      "id": 10,
+      "title": "Frida",
+      "price": 2.99,
+      "description": "Refreshing fermented tea with a tangy, effervescent twist. A naturally probiotic boost for your day!",
+      "category": "drinks",
+      "image": "images/frida.png"
+    },
+    {
+      "id": 11,
+      "title": "Oreo Shake",
+      "price": 4.99,
+      "description": "Creamy vanilla milkshake blended with chunks of Oreo cookies, topped with whipped cream. A classic treat with a twist!",
+      "category": "drinks",
+      "image": "images/milkshake.png"
+    },
+    {
+      "id": 12,
+      "title": "Olipop",
+      "price": 2.99,
+      "description": "A delicious, sparkling prebiotic soda with a blend of gut-friendly fibers and botanical extracts.",
+      "category": "drinks",
+      "image": "images/olipop.png"
+    },
+    {
+      "id": 13,
+      "title": "Tropical Bliss",
+      "price": 2.99,
+      "description": "A tropical blend of zesty lime and creamy coconut, served chilled for a refreshing and exotic twist.",
+      "category": "drinks",
+      "image": "images/tropical-bliss.png"
+    },
+    {
+      "id": 14,
+      "title": "Potato Fries",
+      "price": 4.99,
+      "description": "Crispy and golden fries, perfectly seasoned and served hot. The ideal side for any meal!",
+      "category": "sides",
+      "image": "images/potato-fries.png"
+    },
+    {
+      "id": 15,
+      "title": "Sweet Potato Fries",
+      "price": 4.99,
+      "description": "Crispy, golden sweet potato fries with a hint of natural sweetness, lightly seasoned.",
+      "category": "sides",
+      "image": "images/sweet-potato.png"
+    }
+  ]
 }
