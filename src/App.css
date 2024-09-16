@@ -4,9 +4,9 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: hidden;
+  overflow: auto;
 }
-
+/* Home, Card css */
 .bg-home {
   width: 100vw;
   height: 100vh;
@@ -67,4 +67,54 @@ img {
 }
 .fire-icon {
   width: 40px;
+}
+/* Menu, css */
+
+.bg-home-menu {
+  height: 100%;
+  background-color: black;
+  color: wheat;
+  font-family: "Rum Raisin", sans-serif;
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  overflow: auto;
+}
+.top-container-menu {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-around;
+}
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.menu-item {
+  flex: 1 1 calc(20% - 10px); /* 20% width per item with space for margin */
+  margin: 5px; /* Adjust margin between items */
+  box-sizing: border-box; /* Ensures padding/margin are included in width */
+}
+
+.menu-item h3,
+.menu-item p {
+  word-wrap: break-word; /* Ensures words break properly */
+  white-space: normal; /* Allows text to wrap onto the next line */
+  text-align: center;
+}
+.menu-item-img {
+  width: 90%;
+}
+.menu-add {
+  width: 20px;
+}
+.menu-btn {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 32px;
+  font-family: "Rum Raisin";
+  cursor: pointer;
+  text-shadow: 2px 4px 2px #fb9700;
 }
