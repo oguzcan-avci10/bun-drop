@@ -6,7 +6,7 @@ function CartItem({ title, image, price, quantity, onIncrease, onDecrease }) {
         <img src={image} alt="product-image" className="shopping-cart-img" />
         <p className="shopping-cart-title">{title}</p>
         <p className="shopping-cart-price">${price}</p>
-        {/* quantity input */}
+        {/* quantity */}
         <div className="quantity-controls">
           <button onClick={onDecrease} disabled={quantity < 1}>
             -

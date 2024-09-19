@@ -10,7 +10,7 @@ function Confirmation() {
     if (savedOrderDetails) {
       setOrderDetails(JSON.parse(savedOrderDetails));
     } else {
-      navigate("/"); // Redirect to home if no order details
+      navigate("/"); // redirect to home if no order details
     }
   }, [navigate]);
 
