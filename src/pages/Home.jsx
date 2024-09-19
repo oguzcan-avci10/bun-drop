@@ -10,8 +10,14 @@ function Home() {
       .then((response) => response.json())
       .then((data) => {
         // Filter to get burgers with id's 1-3
+
         const filteredData = data.filter((item) => item.id <= 3);
         setPopular(filteredData);
+
+        const savedOrderDetails = localStorage.getItem("orderDetails");
+        if (savedOrderDetails) {
+          localStorage.removeItem("orderDetails");
+        }
       });
   }, []);
 
@@ -30,7 +36,7 @@ function Home() {
         </h1>
         <div className="popular-burgers">
           {popular.map((burger) => (
-            <div>
+            <div key={burger.id}>
               <Card key={burger.id} title={burger.title} image={burger.image} />
             </div>
           ))}

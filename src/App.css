@@ -70,7 +70,7 @@ img {
 }
 /* Menu, css */
 
-.bg-home-menu {
+.bg-menu {
   height: 100%;
   background-color: black;
   color: wheat;
@@ -117,4 +117,237 @@ img {
   font-family: "Rum Raisin";
   cursor: pointer;
   text-shadow: 2px 4px 2px #fb9700;
+}
+/* Cart, css */
+.bg-cart {
+  height: 100vh;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+.top-container-cart {
+  display: flex;
+}
+.heading-cart {
+  color: white;
+  font-family: "Rum Raisin";
+  margin-top: 5%;
+  margin-left: 10%;
+}
+.hr {
+  height: 12px;
+  background-color: #c6954b;
+  border: 0;
+  box-shadow: #c6954b 0px 1px 50px 4px;
+  width: 90%;
+  border-radius: 20px;
+}
+.product-info-cart {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  margin-right: 20%;
+  font-size: 20px;
+}
+.product-tag-cart {
+  color: white;
+  font-family: "Rum Raisin";
+  width: 100px;
+  text-align: center;
+}
+.shopping-cart {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  margin-right: 20%;
+}
+.shopping-cart-img,
+.shopping-cart-title,
+.shopping-cart-ptice,
+.shopping-cart-price {
+  width: 100px;
+  text-align: center;
+  font-family: "Rum Raisin";
+  align-self: center;
+}
+.shopping-cart-title {
+  font-size: 18px;
+}
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+
+.product-tag-cart {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: blanchedalmond;
+}
+
+.total-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  color: blanchedalmond;
+  font-family: "Rum Raisin";
+}
+
+.total {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.proceed-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  font-family: "Rum Raisin";
+}
+
+.checkout-section,
+.payment-section {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: black;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  color: blanchedalmond;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  font-family: "Rum raisin";
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+
+.hr {
+  margin: 15px 0;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.swish-payment {
+  font-family: "Rum raisin";
+}
+
+/* Confirmation css */
+
+.bg-confirmation {
+  height: 100vh;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  z-index: -1;
+}
+.confirmation-page {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fdfad9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Rum Raisin";
+  box-shadow: rgba(251, 151, 0, 0.6) 0px 30px 90px;
+}
+.order-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.confirmation-btn-home {
+  font-family: "Rum Raisin";
+  width: 100px;
+  font-size: 26px;
+  background-color: #fb9700;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.order-details h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: left;
+}
+
+.order-details ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.order-details li {
+  font-size: 1.2rem;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  color: #555;
+}
+
+.order-details li:last-child {
+  border-bottom: none;
+}
+
+.order-details p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.order-details h3 + p {
+  margin-bottom: 20px;
+}
+
+.order-details .total {
+  font-size: 1.8rem;
+  color: #000;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .order-details-container {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  .order-details h3 {
+    font-size: 1.4rem;
+  }
+
+  .order-details li {
+    font-size: 1rem;
+  }
+
+  .order-details .total {
+    font-size: 1.5rem;
+  }
 }

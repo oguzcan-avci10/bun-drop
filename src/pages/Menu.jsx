@@ -3,6 +3,7 @@ import MenuItem from "../components/MenuItem";
 import { Link } from "react-router-dom";
 function Menu() {
   const [menu, setMenu] = useState([]);
+  const [cart, setCart] = useState([]);
   const [userFilter, setUserFilter] = useState("");
 
   // fetch menu
@@ -14,19 +15,47 @@ function Menu() {
       });
   }, []);
 
+  // load cart from localStorage on component mount
+  useEffect(() => {
+    const savedCart = JSON.parse(localStorage.getItem("cart")) || [];
+    setCart(savedCart);
+  }, []);
+
+  // save cart to localStorage when cart updates
+  useEffect(() => {
+    if (cart.length > 0) {
+      localStorage.setItem("cart", JSON.stringify(cart));
+    }
+  }, [cart]);
+
+  // function to add items to the cart
+  const addToCart = (item) => {
+    setCart((prevCart) => {
+      const existingItem = prevCart.find((cartItem) => cartItem.id === item.id);
+      if (existingItem) {
+        // ff the item is already in the cart, increase its quantity
+        existingItem.quantity += 1;
+        return [...prevCart];
+      } else {
+        // If it's a new item, add it with a quantity of 1
+        return [...prevCart, { ...item, quantity: 1 }];
+      }
+    });
+  };
+
   // function to handle button clicks
   const handleFilterChange = (category) => {
     setUserFilter(category);
   };
 
-  // Filtered menu items based on the selected category
+  // filtered menu items based on the selected category
   const filteredMenu = userFilter
     ? menu.filter((item) => item.category === userFilter)
     : menu;
 
   return (
     <>
-      <div className="bg-home-menu">
+      <div className="bg-menu">
         <div className="top-container-menu">
           <img src="/images/logo.png" alt="bun-drop-logo" />
           <button className="menu-btn" onClick={() => handleFilterChange("")}>
@@ -51,7 +80,7 @@ function Menu() {
             Drinks
           </button>
           <Link to="/cart">
-            <button className="menu-btn">Cart</button>
+            <button className="menu-btn">Cart ({cart.length})</button>
           </Link>
         </div>
         <div className="menu-container">
@@ -62,6 +91,7 @@ function Menu() {
               description={item.description}
               image={item.image}
               price={item.price}
+              onAddToCart={() => addToCart(item)}
             />
           ))}
         </div>
